@@ -33,9 +33,9 @@ def getResult(img):
     return result
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
-    return render_template('index.html')
+    return "Brain Tumor Detection"
 
 
 @app.route('/predict', methods=['GET', 'POST'])
