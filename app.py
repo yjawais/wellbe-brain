@@ -1,7 +1,6 @@
 import os
 import tensorflow as tf
 import numpy as np
-import tensorflow.keras.preprocessing.image 
 from PIL import Image
 import cv2
 from keras.models import load_model
@@ -33,7 +32,7 @@ def getResult(img):
     return result
 
 
-@app.route('/', methods=['GET'])
+@app.route('/',methods=['GET'])
 def index():
     return render_template('index.html')
 
