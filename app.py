@@ -30,12 +30,12 @@ def getResult(img):
     return result
 
 
-@app.route('/',methods=['GET'])
-def index():
+@app.route('/')
+def home():
     return "Welcome to Diabetic predictions"
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict', methods=["POST"])
 def upload():
     if request.method == 'POST':
         f = request.files['file']
