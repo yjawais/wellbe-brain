@@ -32,7 +32,7 @@ def getResult(img):
 
 @app.route('/')
 def home():
-    return "Welcome to Diabetic predictions"
+    return render_template('index.html')
 
 
 @app.route('/predict', methods=["POST"])
