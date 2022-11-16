@@ -12,7 +12,6 @@ app = Flask(__name__)
 
 
 model =load_model('BrainTumor10Epochs.h5')
-print('Model loaded. Check http://127.0.0.1:5000/')
 
 
 def get_className(classNo):
@@ -34,7 +33,7 @@ def getResult(img):
 
 @app.route('/',methods=['GET'])
 def index():
-    return render_template('index.html')
+    return "Welcome to Diabetic predictions"
 
 
 @app.route('/predict', methods=['GET', 'POST'])
